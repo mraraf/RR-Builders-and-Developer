@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR Builders &amp; Developers | Premier Real Estate &amp; Construction in Khulna</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Playfair Display, Cinzel & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rrNavy: '#06264E',
+                        rrNavyDark: '#031630',
+                        rrGold: '#C69738',
+                        rrGoldLight: '#E5C170',
+                        rrGoldDark: '#9B711E',
+                        rrSlate: '#5A626A',
+                        rrCream: '#FAF9F6',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Metallic Gold Foil & Subtle Architectural Textures */
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #E6C373 0%, #C69738 50%, #9B711E 100%);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #E8C677 0%, #C69738 55%, #8F6415 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-blueprint-pattern {
+            background-image: 
+                linear-gradient(to right, rgba(198, 151, 56, 0.07) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(198, 151, 56, 0.07) 1px, transparent 1px);
+            background-size: 48px 48px;
+        }
+        .card-hover-lift {
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+        }
+        .card-hover-lift:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 35px -10px rgba(6, 38, 78, 0.14);
+        }
+    </style>
+</head>
+<body class="bg-rrCream text-slate-800 font-sans antialiased selection:bg-rrGold selection:text-white">
+
+    <!-- =====================================================================
+         TOP CONTACT BAR
+    ====================================================================== -->
+    <div class="bg-rrNavyDark text-slate-300 text-xs py-2.5 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-2">
+            <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+                <a href="tel:01711173077" class="hover:text-rrGoldLight transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-rrGold"></i>
+                    <span class="font-semibold text-white">01711173077</span>
+                </a>
+                <a href="mailto:johny_786@yahoo.com" class="hover:text-rrGoldLight transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope text-rrGold"></i>
+                    <span>johny_786@yahoo.com</span>
+                </a>
+                <span class="hidden md:flex items-center gap-1.5 text-slate-400">
+                    <i class="fa-solid fa-location-dot text-rrGold"></i>
+                    <span>Munna Tower, Shib Bari More &amp; 7 Samsur Rahaman Road, Khulna</span>
+                </span>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="https://mcaak.com/data-view/87/current_page_id/1?group=3" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-rrGoldLight hover:text-white font-semibold transition">
+                    <i class="fa-solid fa-id-badge"></i>
+                    <span>MCAAK Official Profile</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================================
+         STICKY NAVIGATION HEADER
+    ====================================================================== -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo (High-Precision Vector Recreation of 1000012410.jpg) -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-14 h-12 flex items-center justify-center shrink-0">
+                    <svg viewBox="0 0 260 185" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="rrGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#E7C472"/>
+                                <stop offset="50%" stop-color="#C69738"/>
+                                <stop offset="100%" stop-color="#9A701E"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- First Navy Blue 'R' -->
+                        <path d="M 32 18 H 92 C 118 18 134 32 134 54 C 134 72 122 84 103 88 L 136 135 H 104 L 77 92 H 58 V 135 H 32 V 18 Z M 58 41 V 70 H 88 C 101 70 108 64 108 55 C 108 46 101 41 88 41 H 58 Z" fill="#06264E"/>
+                        <!-- Second Metallic Gold 'R' -->
+                        <path d="M 108 18 H 168 C 194 18 210 32 210 54 C 210 72 198 84 179 88 L 214 135 H 182 L 154 92 H 135 V 135 H 108 V 18 Z M 135 41 V 70 H 165 C 178 70 185 64 185 55 C 185 46 178 41 165 41 H 135 Z" fill="url(#rrGoldGrad)"/>
+                        <!-- White Cutout Mask behind Roof & Swoosh -->
+                        <path d="M 78 125 L 128 86 L 178 125 L 166 136 L 128 106 L 90 136 Z" fill="#FFFFFF"/>
+                        <!-- Navy Pitched Roof & 4-Pane Window -->
+                        <path d="M 86 125 L 128 92 L 170 125 L 161 134 L 128 108 L 95 134 Z" fill="#06264E"/>
+                        <rect x="120" y="117" width="6" height="6" fill="#1E293B"/>
+                        <rect x="129" y="117" width="6" height="6" fill="#1E293B"/>
+                        <rect x="120" y="126" width="6" height="6" fill="#1E293B"/>
+                        <rect x="129" y="126" width="6" height="6" fill="#1E293B"/>
+                        <!-- Architectural Skyscrapers on Right -->
+                        <polygon points="196,74 212,56 212,135 196,135" fill="#64748B"/>
+                        <polygon points="214,56 228,70 228,136 214,135" fill="#7C858E"/>
+                        <polygon points="230,82 242,91 242,138 230,136" fill="#06264E"/>
+                        <!-- Gold Dynamic Arc Swoosh -->
+                        <path d="M 22 146 Q 92 64 174 62 Q 100 80 22 146 Z" fill="url(#rrGoldGrad)"/>
+                        <!-- Navy Base Horizon Curve -->
+                        <path d="M 28 148 Q 135 130 248 147 Q 135 139 28 148 Z" fill="#06264E"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="block font-serif font-extrabold text-xl tracking-tight text-rrNavy leading-none">
+                        RR <span class="text-rrGoldDark">BUILDERS</span>
+                    </span>
+                    <span class="block text-[10px] font-bold uppercase tracking-[0.22em] text-slate-500 mt-1">
+                        &amp; Developers
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700">
+                <a href="#home" class="hover:text-rrGoldDark transition">Home</a>
+                <a href="#about" class="hover:text-rrGoldDark transition">About Us</a>
+                <a href="#ceo-leadership" class="hover:text-rrGoldDark transition">CEO &amp; Leadership</a>
+                <a href="#projects" class="hover:text-rrGoldDark transition">Projects</a>
+                <a href="#sister-concerns" class="hover:text-rrGoldDark transition">Sister Concerns</a>
+                <a href="#contact" class="hover:text-rrGoldDark transition">Offices</a>
+            </nav>
+
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center gap-3">
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-rrNavy hover:bg-rrNavyDark text-white text-xs font-bold uppercase tracking-wider shadow-md transition">
+                    <span>Book Consultation</span>
+                    <i class="fa-solid fa-arrow-right text-rrGoldLight"></i>
+                </a>
+                <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2.5 rounded-xl bg-slate-100 text-rrNavy hover:bg-slate-200 transition">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-3 pb-5 space-y-2 shadow-lg">
+            <a href="#home" class="mobile-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50">Home</a>
+            <a href="#about" class="mobile-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50">About Us</a>
+            <a href="#ceo-leadership" class="mobile-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50">CEO &amp; Leadership</a>
+            <a href="#projects" class="mobile-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50">Projects</a>
+            <a href="#sister-concerns" class="mobile-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50">Sister Concerns</a>
+            <a href="#contact" class="mobile-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-rrNavy bg-rrGold/15">Contact Khulna Offices</a>
+        </div>
+    </header>
+
+    <!-- =====================================================================
+         HERO SECTION: ARCHITECTURAL EXCELLENCE IN KHULNA
+    ====================================================================== -->
+    <section id="home" class="relative bg-rrNavyDark text-white overflow-hidden hero-blueprint-pattern">
+        <!-- Ambient Radial Glow -->
+        <div class="absolute -top-32 -right-32 w-[520px] h-[520px] rounded-full bg-rrGold/15 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -left-32 w-[420px] h-[420px] rounded-full bg-sky-500/10 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Hero Copy -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-rrGold/40 text-rrGoldLight text-xs font-bold uppercase tracking-widest">
+                    <span class="w-2 h-2 rounded-full bg-rrGold"></span>
+                    <span>Premier Real Estate &amp; Infrastructure • Khulna</span>
+                </div>
+
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.12] tracking-tight">
+                    Building Landmarks of <span class="gold-gradient-text">Trust &amp; Modern Living</span>
+                </h1>
+
+                <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+                    <strong>RR Builders &amp; Developers</strong> delivers contemporary residential apartments, commercial towers, and turnkey civil engineering across prime locations in Khulna—backed by uncompromising structural integrity and transparent handover commitments.
+                </p>
+
+                <!-- Primary Action Buttons -->
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#projects" class="px-7 py-3.5 rounded-xl gold-gradient-bg text-rrNavyDark font-bold text-sm shadow-lg hover:opacity-95 transition flex items-center gap-2">
+                        <span>Explore Developments</span>
+                        <i class="fa-solid fa-building"></i>
+                    </a>
+                    <a href="#ceo-leadership" class="px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold text-sm transition flex items-center gap-2">
+                        <i class="fa-solid fa-user-tie text-rrGoldLight"></i>
+                        <span>Meet Our CEO</span>
+                    </a>
+                </div>
+
+                <!-- Key Trust Metrics -->
+                <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-xl">
+                    <div>
+                        <span class="block font-serif text-2xl sm:text-3xl font-bold text-rrGoldLight">100%</span>
+                        <span class="text-xs text-slate-400">RAJUK / KDA Code Compliant</span>
+                    </div>
+                    <div>
+                        <span class="block font-serif text-2xl sm:text-3xl font-bold text-rrGoldLight">Prime</span>
+                        <span class="text-xs text-slate-400">Khulna City Locations</span>
+                    </div>
+                    <div>
+                        <span class="block font-serif text-2xl sm:text-3xl font-bold text-rrGoldLight">3+</span>
+                        <span class="text-xs text-slate-400">Sister Enterprises</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Hero Architectural Showcase Card -->
+            <div class="lg:col-span-5">
+                <div class="relative rounded-2xl overflow-hidden border border-rrGold/40 shadow-2xl bg-rrNavy">
+                    <img 
+                        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80" 
+                        onerror="this.src='https://placehold.co/800x900/06264E/E5C170?text=RR+Builders+%26+Developers'" 
+                        alt="RR Builders & Developers Modern Commercial & Residential Architecture" 
+                        class="w-full h-[420px] sm:h-[460px] object-cover opacity-90"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-rrNavyDark via-rrNavyDark/40 to-transparent"></div>
+                    
+                    <!-- Floating Brand Emblem Card -->
+                    <div class="absolute bottom-5 inset-x-5 bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-xl border border-rrGold/30 flex items-center gap-4 text-rrNavy">
+                        <div class="w-14 h-14 rounded-xl bg-rrCream border border-slate-200 p-1.5 flex items-center justify-center shrink-0">
+                            <svg viewBox="0 0 260 185" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 32 18 H 92 C 118 18 134 32 134 54 C 134 72 122 84 103 88 L 136 135 H 104 L 77 92 H 58 V 135 H 32 V 18 Z M 58 41 V 70 H 88 C 101 70 108 64 108 55 C 108 46 101 41 88 41 H 58 Z" fill="#06264E"/>
+                                <path d="M 108 18 H 168 C 194 18 210 32 210 54 C 210 72 198 84 179 88 L 214 135 H 182 L 154 92 H 135 V 135 H 108 V 18 Z M 135 41 V 70 H 165 C 178 70 185 64 185 55 C 185 46 178 41 165 41 H 135 Z" fill="#C69738"/>
+                                <path d="M 86 125 L 128 92 L 170 125 L 161 134 L 128 108 L 95 134 Z" fill="#06264E"/>
+                                <polygon points="196,74 212,56 212,135 196,135" fill="#64748B"/>
+                                <polygon points="214,56 228,70 228,136 214,135" fill="#7C858E"/>
+                                <polygon points="230,82 242,91 242,138 230,136" fill="#06264E"/>
+                                <path d="M 22 146 Q 92 64 174 62 Q 100 80 22 146 Z" fill="#C69738"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-rrGoldDark block">Corporate Headquarters</span>
+                            <h3 class="font-serif font-bold text-base text-rrNavy">Munna Tower, Shib Bari More</h3>
+                            <p class="text-xs text-slate-600">Khulna, Bangladesh • Direct Inquiry: 01711173077</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         ABOUT & COMPANY BRIEF SECTION
+    ====================================================================== -->
+    <section id="about" class="py-16 sm:py-24 bg-white border-b border-slate-200/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Brief -->
+                <div class="lg:col-span-6 space-y-5">
+                    <span class="text-xs font-bold uppercase tracking-[0.22em] text-rrGoldDark">Company Brief &amp; Vision</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-rrNavy leading-tight">
+                        Shaping Khulna’s Skyline with Precision &amp; Integrity
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        <strong>RR Builders &amp; Developers</strong> is a premier real estate development and construction firm headquartered in Khulna, Bangladesh. Founded on the principles of engineering excellence, architectural elegance, and ethical land partnership, we specialize in crafting high-value residential apartments and modern commercial complexes.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Operating alongside our established sister concerns in maritime shipping and international trade, our organization brings robust financial strength, dependable supply-chain logistics, and on-schedule project delivery to every landowner and homeowner we serve.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
+                        <div class="p-4 rounded-xl bg-rrCream border border-slate-200/80 flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-rrNavy text-rrGoldLight flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-rrNavy">Earthquake-Resilient Design</h4>
+                                <p class="text-xs text-slate-500 mt-1">Strict adherence to BNBC &amp; KDA structural safety standards.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-rrCream border border-slate-200/80 flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-rrNavy text-rrGoldLight flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-rrNavy">Transparent Land Joint-Ventures</h4>
+                                <p class="text-xs text-slate-500 mt-1">Fair landowner sharing ratios and guaranteed handover timelines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Core Services Grid -->
+                <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div class="p-6 rounded-2xl bg-rrCream border border-slate-200/80 card-hover-lift">
+                        <div class="w-12 h-12 rounded-xl gold-gradient-bg text-rrNavyDark flex items-center justify-center text-xl mb-4 shadow-sm">
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-rrNavy mb-2">Residential Condominiums</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Thoughtfully ventilated luxury family apartments featuring rooftop gardens, standby generators, modern elevators, and 24/7 CCTV security.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-rrCream border border-slate-200/80 card-hover-lift">
+                        <div class="w-12 h-12 rounded-xl bg-rrNavy text-rrGoldLight flex items-center justify-center text-xl mb-4 shadow-sm">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-rrNavy mb-2">Commercial Plazas</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            High-visibility corporate offices, banking floors, and retail showrooms situated along Khulna’s busiest commercial corridors.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-rrCream border border-slate-200/80 card-hover-lift">
+                        <div class="w-12 h-12 rounded-xl bg-rrNavy text-rrGoldLight flex items-center justify-center text-xl mb-4 shadow-sm">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-rrNavy mb-2">Land Development</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            End-to-end joint venture partnerships with landowners—handling soil testing, architectural approvals, construction, and marketing.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-rrCream border border-slate-200/80 card-hover-lift">
+                        <div class="w-12 h-12 rounded-xl gold-gradient-bg text-rrNavyDark flex items-center justify-center text-xl mb-4 shadow-sm">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-rrNavy mb-2">Turnkey Civil Engineering</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Industrial warehouses, port-adjacent logistics facilities, and structural renovation executed by experienced civil engineers.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         CEO & EXECUTIVE LEADERSHIP PROFILE (MCAAK VERIFIED DETAILS)
+    ====================================================================== -->
+    <section id="ceo-leadership" class="py-16 sm:py-24 bg-rrCream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Heading -->
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-[0.22em] text-rrGoldDark">Executive Leadership</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-rrNavy mt-2">Message &amp; Profile of Our CEO</h2>
+                <p class="text-sm text-slate-600 mt-3">
+                    Guided by seasoned business leadership across Khulna &amp; Mongla Port’s trade, shipping, and real estate sectors.
+                </p>
+            </div>
+
+            <!-- Executive Profile Card -->
+            <div class="bg-white rounded-3xl border border-slate-200/90 shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+                
+                <!-- Left Navy & Gold Executive Identity Panel -->
+                <div class="lg:col-span-5 bg-rrNavyDark text-white p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute -right-12 -bottom-12 w-56 h-56 rounded-full border border-rrGold/20 pointer-events-none"></div>
+                    
+                    <div>
+                        <!-- Official Association Badge -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rrGold/20 border border-rrGold/40 text-rrGoldLight text-[11px] font-bold uppercase tracking-wider mb-6">
+                            <i class="fa-solid fa-certificate"></i>
+                            <span>MCAAK Executive Directory #87</span>
+                        </div>
+
+                        <!-- Monogram Crest -->
+                        <div class="w-24 h-24 rounded-2xl gold-gradient-bg p-0.5 shadow-xl mb-6">
+                            <div class="w-full h-full rounded-[14px] bg-rrNavy flex items-center justify-center">
+                                <span class="font-display font-extrabold text-3xl text-rrGoldLight tracking-wider">MC</span>
+                            </div>
+                        </div>
+
+                        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white leading-snug">
+                            Mahamudun Chowdury
+                        </h3>
+                        <p class="text-rrGoldLight font-bold text-sm uppercase tracking-widest mt-1.5">
+                            Chief Executive Officer (CEO)
+                        </p>
+                        <p class="text-xs text-slate-300 mt-1">
+                            RR Builders &amp; Developers
+                        </p>
+
+                        <!-- Public Leadership Roles -->
+                        <div class="mt-6 pt-6 border-t border-white/10 space-y-3 text-xs">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-award text-rrGold mt-0.5"></i>
+                                <div>
+                                    <span class="font-bold text-white block">Secretary</span>
+                                    <span class="text-slate-300">Mongla Customs C&amp;F Agents Association (MCAAK)</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-briefcase text-rrGold mt-0.5"></i>
+                                <div>
+                                    <span class="font-bold text-white block">Proprietor &amp; Managing Director</span>
+                                    <span class="text-slate-300">Raja Enterprise &amp; Bagdad Shipping Limited</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Executive Contact & MCAAK Verification Link -->
+                    <div class="mt-8 pt-6 border-t border-white/10 space-y-3">
+                        <div class="flex items-center gap-3 text-xs">
+                            <span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-rrGoldLight">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <div>
+                                <span class="text-slate-400 block text-[10px] uppercase">Direct Mobile</span>
+                                <a href="tel:01711173077" class="font-bold text-white hover:text-rrGoldLight transition text-sm">01711173077</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 text-xs">
+                            <span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-rrGoldLight">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <div>
+                                <span class="text-slate-400 block text-[10px] uppercase">Official Email</span>
+                                <a href="mailto:johny_786@yahoo.com" class="font-semibold text-white hover:text-rrGoldLight transition">johny_786@yahoo.com</a>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="https://mcaak.com/data-view/87/current_page_id/1?group=3" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-white/10 hover:bg-rrGold hover:text-rrNavyDark border border-rrGold/40 text-xs font-bold flex items-center justify-center gap-2 transition">
+                                <span>Verify on MCAAK Official Portal</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right CEO Brief & Philosophy -->
+                <div class="lg:col-span-7 p-8 sm:p-12 flex flex-col justify-center space-y-6">
+                    <div class="inline-flex items-center gap-2 text-rrGoldDark font-bold text-xs uppercase tracking-widest">
+                        <i class="fa-solid fa-quote-left text-lg"></i>
+                        <span>Leadership Brief</span>
+                    </div>
+
+                    <blockquote class="font-serif text-xl sm:text-2xl text-rrNavy font-semibold leading-relaxed">
+                        &ldquo;A home or commercial landmark is more than concrete and steel—it is a generational commitment to safety, trust, and dignified living.&rdquo;
+                    </blockquote>
+
+                    <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+                        <p>
+                            Under the leadership of <strong>Mahamudun Chowdury</strong>, <strong>RR Builders &amp; Developers</strong> has emerged as a trusted name in Khulna’s urban transformation. Alongside serving as the elected <strong>Secretary of the Mongla Customs C&amp;F Agents Association</strong> and leading <strong>Raja Enterprise</strong> and <strong>Bagdad Shipping Limited</strong>, Mr. Chowdury brings decades of commercial discipline, regulatory transparency, and stakeholder trust into real estate development.
+                        </p>
+                        <p>
+                            Every project undertaken by RR Builders &amp; Developers is personally overseen for architectural utility, prime connectivity across Khulna city, and timely delivery—ensuring complete peace of mind for both residential buyers and landowner partners.
+                        </p>
+                    </div>
+
+                    <!-- Office Quick Summary Strip -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-100">
+                        <div class="flex items-start gap-3">
+                            <span class="w-8 h-8 rounded-lg bg-rrNavy/10 text-rrNavy flex items-center justify-center text-xs shrink-0 mt-0.5">
+                                <i class="fa-solid fa-building"></i>
+                            </span>
+                            <div>
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-rrGoldDark block">Head Office</span>
+                                <span class="text-xs font-bold text-rrNavy">7 Samsur Rahaman Road, Khulna</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="w-8 h-8 rounded-lg bg-rrNavy/10 text-rrNavy flex items-center justify-center text-xs shrink-0 mt-0.5">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+                            <div>
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-rrGoldDark block">Corporate Office</span>
+                                <span class="text-xs font-bold text-rrNavy">Munna Tower, Shib Bari More, Khulna</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         FEATURED PROJECTS PORTFOLIO (FILTERABLE)
+    ====================================================================== -->
+    <section id="projects" class="py-16 sm:py-24 bg-white border-t border-slate-200/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-[0.22em] text-rrGoldDark">Portfolio &amp; Developments</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-rrNavy mt-2">Signature Developments in Khulna</h2>
+                </div>
+
+                <!-- Interactive Filter Tabs -->
+                <div class="inline-flex flex-wrap gap-2 bg-rrCream p-1.5 rounded-xl border border-slate-200">
+                    <button onclick="filterProjects('all')" class="proj-filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-rrNavy text-white transition" data-filter="all">
+                        All Projects
+                    </button>
+                    <button onclick="filterProjects('ongoing')" class="proj-filter-btn px-4 py-2 rounded-lg text-xs font-bold text-slate-600 hover:text-rrNavy transition" data-filter="ongoing">
+                        Ongoing
+                    </button>
+                    <button onclick="filterProjects('upcoming')" class="proj-filter-btn px-4 py-2 rounded-lg text-xs font-bold text-slate-600 hover:text-rrNavy transition" data-filter="upcoming">
+                        Upcoming
+                    </button>
+                    <button onclick="filterProjects('commercial')" class="proj-filter-btn px-4 py-2 rounded-lg text-xs font-bold text-slate-600 hover:text-rrNavy transition" data-filter="commercial">
+                        Commercial
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1 -->
+                <article class="project-card rounded-2xl overflow-hidden bg-rrCream border border-slate-200/90 card-hover-lift flex flex-col" data-category="ongoing">
+                    <div class="relative h-56 overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" 
+                            onerror="this.src='https://placehold.co/800x500/06264E/E5C170?text=RR+Green+View+Heights'" 
+                            alt="RR Green View Heights Residential Apartment" 
+                            class="w-full h-full object-cover"
+                        >
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-rrNavy text-rrGoldLight text-[10px] font-bold uppercase tracking-wider shadow">
+                            Ongoing • Residential
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-1.5 text-xs text-rrGoldDark font-semibold mb-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Shib Bari More, Khulna</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-rrNavy mb-2">RR Green View Heights</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                                G+9 luxury residential apartments offering 1,650 – 2,100 sq. ft. 3 &amp; 4-bedroom layouts with community hall, prayer space, and dedicated basement parking.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-200 flex items-center justify-between text-xs">
+                            <span class="font-bold text-rrNavy">1,650 – 2,100 Sq.Ft</span>
+                            <button onclick="inquireProject('RR Green View Heights')" class="font-bold text-rrGoldDark hover:text-rrNavy flex items-center gap-1 transition">
+                                <span>Request Brochure</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card rounded-2xl overflow-hidden bg-rrCream border border-slate-200/90 card-hover-lift flex flex-col" data-category="commercial ongoing">
+                    <div class="relative h-56 overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
+                            onerror="this.src='https://placehold.co/800x500/06264E/E5C170?text=RR+Trade+Center'" 
+                            alt="RR Trade & Corporate Center" 
+                            class="w-full h-full object-cover"
+                        >
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full gold-gradient-bg text-rrNavyDark text-[10px] font-bold uppercase tracking-wider shadow">
+                            Commercial Tower
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-1.5 text-xs text-rrGoldDark font-semibold mb-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Samsur Rahaman Road, Khulna</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-rrNavy mb-2">RR Corporate Square</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                                Modern glass-facade commercial complex engineered for corporate headquarters, banks, shipping agencies, and flagship retail outlets.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-200 flex items-center justify-between text-xs">
+                            <span class="font-bold text-rrNavy">2,500 – 5,000 Sq.Ft Floors</span>
+                            <button onclick="inquireProject('RR Corporate Square')" class="font-bold text-rrGoldDark hover:text-rrNavy flex items-center gap-1 transition">
+                                <span>Book Floor Space</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="project-card rounded-2xl overflow-hidden bg-rrCream border border-slate-200/90 card-hover-lift flex flex-col" data-category="upcoming">
+                    <div class="relative h-56 overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" 
+                            onerror="this.src='https://placehold.co/800x500/06264E/E5C170?text=RR+Royal+Residency'" 
+                            alt="RR Royal Residency Sonadanga" 
+                            class="w-full h-full object-cover"
+                        >
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-emerald-700 text-white text-[10px] font-bold uppercase tracking-wider shadow">
+                            Upcoming • Booking Open
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-1.5 text-xs text-rrGoldDark font-semibold mb-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Sonadanga Residential Area, Khulna</span>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-rrNavy mb-2">RR Royal Residency</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                                Serene south-facing luxury apartments designed for maximum natural daylight, cross-ventilation, and landscaped rooftop leisure.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-200 flex items-center justify-between text-xs">
+                            <span class="font-bold text-rrNavy">1,450 – 1,850 Sq.Ft</span>
+                            <button onclick="inquireProject('RR Royal Residency')" class="font-bold text-rrGoldDark hover:text-rrNavy flex items-center gap-1 transition">
+                                <span>Pre-Launch Inquiry</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         SISTER CONCERNS ECOSYSTEM
+    ====================================================================== -->
+    <section id="sister-concerns" class="py-16 sm:py-20 bg-rrNavyDark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-[0.22em] text-rrGoldLight">Corporate Group Synergy</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Our Associated Sister Concerns</h2>
+                <p class="text-sm text-slate-300 mt-3">
+                    A diversified business group powering real estate, maritime shipping, and international trade across Khulna and Mongla Port.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Concern 1: Raja Enterprise -->
+                <div class="p-7 rounded-2xl bg-white/5 border border-white/10 hover:border-rrGold/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-rrGold/20 border border-rrGold/40 text-rrGoldLight font-display font-bold text-lg flex items-center justify-center mb-5">
+                        RE
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Raja Enterprise</h3>
+                    <p class="text-xs text-rrGoldLight font-semibold uppercase tracking-wider mb-3">Customs Clearing, Forwarding &amp; Trade</p>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        A leading customs C&amp;F agency and general trading enterprise operating at Mongla Port and Khulna, ensuring seamless import-export logistics and supply chain reliability.
+                    </p>
+                </div>
+
+                <!-- Concern 2: Bagdad Shipping Limited -->
+                <div class="p-7 rounded-2xl bg-white/5 border border-white/10 hover:border-rrGold/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-rrGold/20 border border-rrGold/40 text-rrGoldLight text-lg flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-ship"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Bagdad Shipping Limited</h3>
+                    <p class="text-xs text-rrGoldLight font-semibold uppercase tracking-wider mb-3">Maritime Transport &amp; Cargo Logistics</p>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Dedicated maritime shipping, vessel handling, and bulk cargo transportation solutions connecting Bangladesh’s southern sea gateway with domestic industrial hubs.
+                    </p>
+                </div>
+
+                <!-- Concern 3: RR Builders and Developer -->
+                <div class="p-7 rounded-2xl bg-rrNavy border-2 border-rrGold/70 shadow-xl">
+                    <div class="w-12 h-12 rounded-xl gold-gradient-bg text-rrNavyDark font-display font-extrabold text-lg flex items-center justify-center mb-5">
+                        RR
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">RR Builders &amp; Developers</h3>
+                    <p class="text-xs text-rrGoldLight font-semibold uppercase tracking-wider mb-3">Real Estate &amp; Urban Development</p>
+                    <p class="text-xs text-slate-200 leading-relaxed">
+                        Our flagship property development arm committed to building modern residential apartments, commercial complexes, and high-value real estate assets in Khulna.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         OFFICES & DIRECT INQUIRY SECTION
+    ====================================================================== -->
+    <section id="contact" class="py-16 sm:py-24 bg-rrCream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <!-- Left Office Locations & Direct Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-[0.22em] text-rrGoldDark">Visit Our Offices</span>
+                        <h2 class="font-serif text-3xl font-bold text-rrNavy mt-2">Get in Touch with Us</h2>
+                        <p class="text-sm text-slate-600 mt-2">
+                            Whether you are looking to book your dream apartment, invest in commercial space, or discuss a land joint venture in Khulna, our team is ready to assist.
+                        </p>
+                    </div>
+
+                    <!-- Head Office Card -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-rrNavy text-rrGoldLight flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-rrGoldDark">Head Office</span>
+                            <h4 class="font-bold text-base text-rrNavy mt-0.5">7 Samsur Rahaman Road</h4>
+                            <p class="text-xs text-slate-500">Khulna, Bangladesh</p>
+                        </div>
+                    </div>
+
+                    <!-- Corporate Office Card -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl gold-gradient-bg text-rrNavyDark flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-rrGoldDark">Corporate Office</span>
+                            <h4 class="font-bold text-base text-rrNavy mt-0.5">Munna Tower, Shib Bari More</h4>
+                            <p class="text-xs text-slate-500">Khulna, Bangladesh</p>
+                        </div>
+                    </div>
+
+                    <!-- Direct Phone & Email -->
+                    <div class="p-5 rounded-2xl bg-rrNavy text-white space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-slate-300">CEO Direct Hotline:</span>
+                            <a href="tel:01711173077" class="font-bold text-rrGoldLight hover:underline">01711173077</a>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-slate-300">Official Email:</span>
+                            <a href="mailto:johny_786@yahoo.com" class="font-semibold text-white hover:underline">johny_786@yahoo.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Interactive Inquiry Form -->
+                <div class="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-lg">
+                    <h3 class="font-serif text-2xl font-bold text-rrNavy mb-1">Send a Direct Inquiry</h3>
+                    <p class="text-xs text-slate-500 mb-6">Fill out the details below and our Khulna corporate office will respond promptly.</p>
+
+                    <form id="inquiry-form" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1.5">Your Full Name *</label>
+                                <input type="text" id="inq-name" required placeholder="e.g., Tanvir Ahmed" class="w-full px-4 py-3 rounded-xl bg-rrCream border border-slate-200 text-sm focus:outline-none focus:border-rrNavy">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1.5">Phone Number *</label>
+                                <input type="tel" id="inq-phone" required placeholder="e.g., 017XXXXXXXX" class="w-full px-4 py-3 rounded-xl bg-rrCream border border-slate-200 text-sm focus:outline-none focus:border-rrNavy">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1.5">Purpose of Inquiry</label>
+                                <select id="inq-topic" class="w-full px-4 py-3 rounded-xl bg-rrCream border border-slate-200 text-sm focus:outline-none focus:border-rrNavy">
+                                    <option value="Apartment Purchase">Residential Apartment Purchase</option>
+                                    <option value="Commercial Space">Commercial Floor / Shop Booking</option>
+                                    <option value="Land Joint Venture">Landowner Joint Venture Proposal</option>
+                                    <option value="General Corporate">General Corporate / CEO Appointment</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1.5">Preferred Project / Location</label>
+                                <input type="text" id="inq-project" placeholder="e.g., Shib Bari More / Sonadanga" class="w-full px-4 py-3 rounded-xl bg-rrCream border border-slate-200 text-sm focus:outline-none focus:border-rrNavy">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1.5">Message Details *</label>
+                            <textarea id="inq-message" rows="4" required placeholder="Write your requirements, preferred apartment size, or meeting schedule..." class="w-full px-4 py-3 rounded-xl bg-rrCream border border-slate-200 text-sm focus:outline-none focus:border-rrNavy"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 px-6 rounded-xl gold-gradient-bg text-rrNavyDark font-bold text-sm shadow-md hover:opacity-95 transition flex items-center justify-center gap-2">
+                            <span>Submit Inquiry to RR Builders &amp; Developers</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <!-- Inline Confirmation Message Box (No alert() used) -->
+                    <div id="form-feedback" class="hidden mt-5 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-emerald-600 text-base mt-0.5"></i>
+                        <div>
+                            <strong class="block text-sm font-bold">Thank you! Your inquiry has been recorded.</strong>
+                            <span id="form-feedback-detail" class="block mt-1 text-emerald-800"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         FOOTER
+    ====================================================================== -->
+    <footer class="bg-rrNavyDark text-slate-400 py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl gold-gradient-bg text-rrNavyDark font-display font-extrabold flex items-center justify-center">
+                    RR
+                </div>
+                <div>
+                    <span class="block font-serif font-bold text-white text-base">RR Builders &amp; Developers</span>
+                    <span class="block text-xs text-slate-400">A Sister Concern of Raja Enterprise &amp; Bagdad Shipping Limited</span>
+                </div>
+            </div>
+
+            <div class="text-xs text-center md:text-right space-y-1">
+                <p>&copy; 2026 RR Builders &amp; Developers. All Rights Reserved.</p>
+                <p>Head Office: 7 Samsur Rahaman Road, Khulna | Corporate Office: Munna Tower, Shib Bari More, Khulna</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =====================================================================
+         INTERACTIVE JAVASCRIPT
+    ====================================================================== -->
+    <script>
+        // 1. Mobile Navigation Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // 2. Interactive Project Category Filter
+        function filterProjects(category) {
+            const buttons = document.querySelectorAll('.proj-filter-btn');
+            buttons.forEach(btn => {
+                if (btn.dataset.filter === category) {
+                    btn.classList.add('bg-rrNavy', 'text-white');
+                    btn.classList.remove('text-slate-600');
+                } else {
+                    btn.classList.remove('bg-rrNavy', 'text-white');
+                    btn.classList.add('text-slate-600');
+                }
+            });
+
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach(card => {
+                const cats = card.dataset.category || '';
+                if (category === 'all' || cats.includes(category)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // 3. Quick Project Inquiry Scroll & Prefill
+        function inquireProject(projectName) {
+            const projectInput = document.getElementById('inq-project');
+            const messageInput = document.getElementById('inq-message');
+            projectInput.value = projectName;
+            messageInput.value = `Hello, I am interested in learning more about floor plans, pricing, and availability for ${projectName}.`;
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => document.getElementById('inq-name').focus(), 600);
+        }
+
+        // 4. Inquiry Form Submission Handler (Custom Message Box)
+        document.getElementById('inquiry-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('inq-name').value.trim();
+            const phone = document.getElementById('inq-phone').value.trim();
+            const topic = document.getElementById('inq-topic').value;
+
+            const feedbackBox = document.getElementById('form-feedback');
+            const feedbackDetail = document.getElementById('form-feedback-detail');
+            feedbackDetail.textContent = `Dear ${name}, our representative will contact you at ${phone} regarding "${topic}", or you may call CEO Mahamudun Chowdury directly at 01711173077.`;
+            feedbackBox.classList.remove('hidden');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
